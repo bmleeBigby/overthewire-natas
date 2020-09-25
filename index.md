@@ -7,3 +7,5 @@ Setiap level menyimpan password yang dapat digunakan untuk mengakses level selan
 Natas OverTheWire dibuka untuk umum dan dapat di akses melalui link [berikut](https://overthewire.org/wargames/natas/)
 
 ### Level 00
+
+![Image](https://github.com/bmleeBigby/overthewire-natas/blob/gh-pages/img/natas0/soal.PNG)
