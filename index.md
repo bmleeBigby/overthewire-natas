@@ -8,4 +8,4 @@ Natas OverTheWire dibuka untuk umum dan dapat di akses melalui link [berikut](ht
 
 ### Level 00
 
-![Image](https://github.com/bmleeBigby/overthewire-natas/blob/gh-pages/img/natas0/soal.PNG)
+![Image](img/natas0/soal.PNG)
