@@ -6,8 +6,10 @@ Setiap level menyimpan password yang dapat digunakan untuk mengakses level selan
 
 Natas OverTheWire dibuka untuk umum dan dapat di akses melalui link [berikut](https://overthewire.org/wargames/natas/)
 
-### Level 00
+
+# Level 00
 [http://natas0.natas.labs.overthewire.org/](http://natas0.natas.labs.overthewire.org/)
+
 natas0:natas0
 
 ![Image](img/natas0/soal.PNG)
@@ -36,8 +38,10 @@ You can find the password for the next level on this page.
 </html>
 ```
 
-### Level 01
+
+# Level 01
 [http://natas1.natas.labs.overthewire.org/](http://natas1.natas.labs.overthewire.org/)
+
 natas1:gtVrDuiDfck831PqWsLEZy5gyDz1clto
 
 ![Image](img/natas1/soal.PNG)
@@ -67,8 +71,10 @@ next level on this page, but rightclicking has been blocked!
 </html>
 ```
 
-### Level 02
+
+# Level 02
 [http://natas2.natas.labs.overthewire.org/](http://natas2.natas.labs.overthewire.org/)
+
 natas2:ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
 
 ![Image](img/natas2/soal.PNG)
@@ -112,3 +118,68 @@ natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
 eve:zo4mJWyNj2
 mallory:9urtcpzBmH
 ```
+
+
+# Level 03
+[http://natas3.natas.labs.overthewire.org/](http://natas3.natas.labs.overthewire.org/)
+
+natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+
+![Image](img/natas3/soal.PNG)
+
+Challenge kali ini memiliki tampilan sama persis dengan challenge sebelumnya, namun ada hint keras di page source nya
+
+```
+<html>
+<head>
+<!-- This stuff in the header has nothing to do with the level -->
+<link rel="stylesheet" type="text/css" href="http://natas.labs.overthewire.org/css/level.css">
+<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/jquery-ui.css" />
+<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/wechall.css" />
+<script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.js"></script>
+<script src="http://natas.labs.overthewire.org/js/jquery-ui.js"></script>
+<script src=http://natas.labs.overthewire.org/js/wechall-data.js></script><script src="http://natas.labs.overthewire.org/js/wechall.js"></script>
+<script>var wechallinfo = { "level": "natas3", "pass": "sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14" };</script></head>
+<body>
+<h1>natas3</h1>
+<div id="content">
+There is nothing on this page
+<!-- No more information leaks!! Not even Google will find it this time... -->
+</div>
+</body></html>
+```
+
+"Not even Google will find it this time..." Mari kita coba membuka robots.txt karena bagian Disallow di robots.txt berarti bot crawler google tidak bisa melakukan crawling di page yang ditentukan
+
+![Image](img/natas3/step1.PNG)
+
+Kita bisa membuka users.txt dan mendapatkan password level selanjutnya
+
+```
+natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
+```
+
+
+# Step 04
+[http://natas4.natas.labs.overthewire.org/](http://natas4.natas.labs.overthewire.org/)
+
+natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
+
+![Image](img/natas4/soal.PNG)
+Menurut petunjuk diatas kita perlu menambahkan HTTP Header "Referer" sesuai dengan yang ditentukan oleh challenge ini
+
+
+![Image](img/natas4/step1.PNG)
+Mari kita coba cek network tab di browser, bisa dibuka dengan F12
+Saya menggunakan firefox untuk mengedit header HTTP request, dan menambahkan "Referer" ketika di send lagi kita akan mendapatkan flag untuk level selanjutnya. Ada banyak cara untuk mengedit HTTP Header tadi, seperti menggunakan proxy Burpsuite dll.
+
+
+![Image](img/natas4/step2.PNG)
+Berhasil mendapatkan flag level selanjutnya
+
+
+# Step 05
+[http://natas4.natas.labs.overthewire.org/](http://natas4.natas.labs.overthewire.org/)
+
+natas5:iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
+
