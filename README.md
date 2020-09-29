@@ -1,6 +1,5 @@
-# overthewire-natas
-This repository contains my writeup on "Natas OverTheWire" challenges
+This repository contains writeups from different wargames that I'm participating at
 
 Please visit the GitHubPages url
 
-[https://bmleebigby.github.io/overthewire-natas/](https://bmleebigby.github.io/overthewire-natas/)
+[https://bmleebigby.github.io/wargames-writeups/](https://bmleebigby.github.io/wargames-writeups/)
