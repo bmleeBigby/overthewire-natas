@@ -6,6 +6,6 @@ Wargames are not time limited, nor really competitive. The same jeopardy type of
 
 # Index Of /wargames-writeups
 
-- [OverTheWire-Natas]()
+- [OverTheWire-Natas](https://bmleebigby.github.io/wargames-writeups/overthewire-natas/) In-progress
 
-- [WebSec.fr]()
+- [WebSec.fr](https://bmleebigby.github.io/wargames-writeups/websec-fr/) In-progress
